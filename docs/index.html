@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>はま寿司メニュー ルーレット</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>🍣 はま寿司メニュー ルーレット</h1>
+    <p class="tagline">レーンを回して、今日の一貫を決めよう</p>
+    <div class="meta-row">
+      <span id="updatedAt" class="updated-at">読み込み中...</span>
+      <button id="refreshBtn" class="btn btn--ghost" type="button">今すぐ更新</button>
+      <button id="soundBtn" class="btn btn--icon" type="button" title="効果音のON/OFF">🔇</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" id="controls">
+      <div class="control-group">
+        <label for="regionSelect">地域限定メニューを追加</label>
+        <select id="regionSelect">
+          <option value="">全国共通のみ（地域限定なし）</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <span class="control-group__label">絞り込み方法</span>
+        <div class="mode-toggle" id="modeToggle">
+          <button type="button" class="mode-btn is-active" data-mode="genre">ジャンルで選ぶ</button>
+          <button type="button" class="mode-btn" data-mode="price">価格で選ぶ</button>
+        </div>
+      </div>
+
+      <div class="control-group" id="genreControl">
+        <span class="control-group__label">ジャンル</span>
+        <div class="checkbox-grid" id="categoryChecks"></div>
+      </div>
+
+      <div class="control-group" id="priceControl" hidden>
+        <span class="control-group__label">価格帯</span>
+        <div class="checkbox-grid" id="priceChecks"></div>
+      </div>
+
+      <div class="pool-info">
+        現在 <strong id="poolCount">-</strong> 品が対象です
+      </div>
+    </section>
+
+    <section class="reel-wrap">
+      <div class="reel-pointer" aria-hidden="true"></div>
+      <div class="reel-viewport" id="reelViewport">
+        <div class="reel-track" id="reelTrack"></div>
+      </div>
+      <div class="reel-shadow reel-shadow--left" aria-hidden="true"></div>
+      <div class="reel-shadow reel-shadow--right" aria-hidden="true"></div>
+    </section>
+
+    <div class="spin-row">
+      <button id="spinBtn" class="btn btn--spin" type="button">レーンを回す！</button>
+    </div>
+
+    <section id="resultPanel" class="result-panel" hidden>
+      <div class="result-card" id="resultCard"></div>
+      <button id="spinAgainBtn" class="btn btn--spin btn--small" type="button">もう一回まわす</button>
+    </section>
+
+    <p id="errorBanner" class="error-banner" hidden></p>
+  </main>
+
+  <footer class="app-footer">
+    <p>
+      メニュー情報は <a href="https://www.hama-sushi.co.jp/menu/" target="_blank" rel="noopener noreferrer">はま寿司公式サイト</a>
+      から定期的に自動取得しています。価格・品揃えは店舗や時期により異なる場合があります。実際のご注文は店舗の表示をご確認ください。
+      本サイトははま寿司様の非公式ファンツールです。
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

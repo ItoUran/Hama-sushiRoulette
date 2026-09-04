@@ -1,0 +1,465 @@
+:root {
+  /* はま寿司公式サイトのロゴ・ボタン配色（ネイビー×コーラルレッド×金）を基調にした配色 */
+  --bg: #0a1626;
+  --bg-panel: #0f2138;
+  --bg-panel-2: #163256;
+  --border: #2a4a75;
+  --text: #f2f6fb;
+  --text-dim: #9db2cc;
+  --accent: #e2503f;
+  --accent-2: #f4c542;
+  --belt: #241708;
+  --belt-line: #4a3115;
+  --success: #37d67a;
+
+  /* 8ジャンルが色相・明度ともにはっきり分かれるよう選定
+     (橙=握り / 紫=軍艦 / 緑=巻物 / ピンク=デザート / 青=ドリンク / 黄=麺類 / 茶=揚げ物 / 灰=その他) */
+  --cat-nigiri: #ff8a65;
+  --cat-gunkan: #ab47bc;
+  --cat-maki: #66bb6a;
+  --cat-dessert: #ec407a;
+  --cat-drink: #42a5f5;
+  --cat-noodle: #ffca28;
+  --cat-fried: #8d6e63;
+  --cat-other: #b0bec5;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, -apple-system, sans-serif;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.app-header {
+  text-align: center;
+  padding: 32px 20px 20px;
+  background: radial-gradient(ellipse at top, #1c3a5e 0%, var(--bg) 70%);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header h1 {
+  margin: 0 0 4px;
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+.tagline {
+  margin: 0 0 16px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.updated-at {
+  font-size: 12px;
+  color: var(--text-dim);
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg-panel);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  transition: transform .12s ease, background .15s ease;
+}
+.btn:hover { background: var(--bg-panel-2); }
+.btn:active { transform: scale(0.96); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+
+.btn--ghost { background: transparent; }
+.btn--icon { padding: 8px 10px; }
+
+.btn--spin {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #201008;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px 40px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(226, 80, 63, .35);
+}
+.btn--spin:hover { filter: brightness(1.05); }
+.btn--spin.btn--small { font-size: 14px; padding: 9px 22px; box-shadow: none; }
+
+.controls {
+  margin-top: 24px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.control-group { display: flex; flex-direction: column; gap: 8px; }
+.control-group label,
+.control-group__label {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+select#regionSelect {
+  background: var(--bg-panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 14px;
+  max-width: 320px;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 3px;
+  width: fit-content;
+}
+
+.mode-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.mode-btn.is-active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #201008;
+}
+
+.checkbox-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chk {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 12px 6px 8px;
+  cursor: pointer;
+  font-size: 13px;
+  user-select: none;
+}
+.chk input { accent-color: var(--accent); }
+.chk .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+.pool-info {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.pool-info strong { color: var(--accent-2); font-size: 15px; }
+
+/* --- Reel --- */
+
+.reel-wrap {
+  position: relative;
+  margin-top: 26px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 3px solid #3a2a1c;
+  box-shadow: inset 0 0 40px rgba(0,0,0,.5), 0 12px 30px rgba(0,0,0,.4);
+}
+
+.reel-viewport {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(90deg, var(--belt-line) 0 3px, transparent 3px 34px),
+    linear-gradient(180deg, #241812 0%, var(--belt) 50%, #241812 100%);
+}
+
+.reel-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+  will-change: transform;
+  transform: translateX(0);
+}
+
+.reel-pointer {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-2), var(--accent));
+  z-index: 5;
+  pointer-events: none;
+  box-shadow: 0 0 12px rgba(255, 207, 77, .8);
+}
+.reel-pointer::before, .reel-pointer::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 9px solid transparent;
+}
+.reel-pointer::before { top: -1px; border-top: none; border-bottom-color: var(--accent-2); }
+.reel-pointer::after { bottom: -1px; border-bottom: none; border-top-color: var(--accent-2); }
+
+.reel-shadow {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 90px;
+  z-index: 4;
+  pointer-events: none;
+}
+.reel-shadow--left { left: 0; background: linear-gradient(90deg, var(--belt) 0%, transparent 100%); }
+.reel-shadow--right { right: 0; background: linear-gradient(270deg, var(--belt) 0%, transparent 100%); }
+
+.plate {
+  flex: 0 0 auto;
+  width: 148px;
+  height: 158px;
+  border-radius: 14px;
+  background: var(--bg-panel-2);
+  border: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 8px 8px;
+  position: relative;
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+
+.plate::before {
+  content: "";
+  position: absolute;
+  top: 6px; left: 6px; right: 6px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--cat-color, var(--cat-other));
+}
+
+.plate .plate-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #0d1318 center/cover no-repeat;
+  border: 3px solid #fff2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.plate .plate-name {
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 30px;
+}
+
+.plate .plate-price {
+  margin-top: auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+
+.plate.is-winner {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(244, 197, 66, .4), 0 0 26px rgba(244, 197, 66, .6);
+  position: relative;
+  z-index: 6;
+  animation: winner-pop .6s cubic-bezier(.34, 1.56, .64, 1) forwards;
+}
+
+@keyframes winner-pop {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.16); }
+  70%  { transform: scale(0.97); }
+  100% { transform: scale(1.08); }
+}
+
+.spin-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+/* --- Result --- */
+
+.result-panel {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  animation: pop-in .35s cubic-bezier(.2,1.4,.4,1);
+}
+
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(.85) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.result-card {
+  width: min(420px, 92vw);
+  background: linear-gradient(160deg, var(--bg-panel-2), var(--bg-panel));
+  border: 2px solid var(--accent-2);
+  border-radius: 20px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255, 207, 77, .25);
+}
+
+.result-card .result-label {
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.result-card .result-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 12px auto;
+  background: #0d1318 center/cover no-repeat;
+  border: 4px solid var(--accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+}
+
+.result-card .result-name {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 4px 0;
+}
+
+.result-card .result-price {
+  font-size: 20px;
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.result-card .badges {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.result-card .result-note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.error-banner {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background: #3a1414;
+  border: 1px solid #6b2323;
+  color: #ffb4b4;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 30px 20px 50px;
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.app-footer a { color: var(--text-dim); }
+
+/* --- スマホ向け最適化 ---
+   タップ領域はおおむね44px以上を確保し、主要な操作(レーンを回す)は
+   親指で押しやすい全幅ボタンにする。 */
+@media (max-width: 560px) {
+  main { padding: 0 12px 48px; }
+
+  .app-header { padding: 22px 14px 16px; }
+  .app-header h1 { line-height: 1.3; }
+  .tagline { font-size: 13px; margin-bottom: 14px; }
+
+  .btn { padding: 10px 16px; font-size: 14px; }
+  .btn--icon { padding: 10px; min-width: 44px; min-height: 44px; }
+  .refreshBtn, .btn--ghost { min-height: 40px; }
+
+  .controls { padding: 14px; gap: 16px; border-radius: 14px; }
+
+  select#regionSelect { width: 100%; max-width: 100%; padding: 12px; font-size: 15px; min-height: 44px; }
+
+  .mode-toggle { width: 100%; }
+  .mode-btn { flex: 1; padding: 11px 10px; font-size: 13px; min-height: 40px; }
+
+  .checkbox-grid { gap: 10px; }
+  .chk { padding: 10px 14px 10px 10px; font-size: 13.5px; min-height: 40px; }
+
+  .spin-row { padding: 0 4px; }
+  .btn--spin { width: 100%; max-width: 420px; padding: 16px 20px; font-size: 17px; }
+  .btn--spin.btn--small { width: auto; max-width: none; }
+
+  .plate { width: 112px; height: 138px; }
+  .plate .plate-img { width: 58px; height: 58px; }
+  .plate .plate-name { font-size: 11px; }
+  .reel-viewport { height: 158px; }
+
+  .result-card { padding: 18px; }
+  .result-card .result-img { width: 110px; height: 110px; }
+  .result-card .result-name { font-size: 19px; }
+}

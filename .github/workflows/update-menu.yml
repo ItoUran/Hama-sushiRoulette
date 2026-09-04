@@ -1,0 +1,52 @@
+name: Update menu data
+
+# はま寿司公式サイトを定期的に再取得し、docs/data/menu.json を更新してコミットする。
+# docs/ を GitHub Pages の公開元 (Settings > Pages > Deploy from branch: main /docs) に
+# 設定しておけば、ここで更新したデータがそのまま公開サイトに反映される。
+#
+# 手動で今すぐ更新したい場合は、GitHubリポジトリの Actions タブ →
+# "Update menu data" → "Run workflow" から実行できる。
+
+on:
+  schedule:
+    # 毎日 UTC 19:00 (= JST 翌 4:00) に実行
+    - cron: '0 19 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-menu-data
+  cancel-in-progress: false
+
+jobs:
+  update-menu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scrape menu
+        run: node lib/scraper.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/menu.json
+          if git diff --staged --quiet; then
+            echo "No menu changes."
+          else
+            git commit -m "chore: update menu data [skip ci]"
+            git push
+          fi
