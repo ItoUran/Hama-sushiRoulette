@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-24T22:11:07.799Z",
+  "updatedAt": "2026-09-25T22:10:07.613Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 340,
+  "itemCount": 343,
   "categories": [
     "nigiri",
     "gunkan",
@@ -37,54 +37,54 @@
   ],
   "items": [
     {
-      "id": "d00107f2bfa6",
-      "name": "大葉真いか握り",
+      "id": "bb2d380e3666",
+      "name": "うにつつみ",
+      "price": 110,
+      "category": "nigiri",
+      "region": "全国",
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/unitsutsumi.png"
+    },
+    {
+      "id": "185632af6d5c",
+      "name": "大切りまぐろはらみ",
       "price": 110,
       "category": "nigiri",
       "region": "全国",
       "note": null,
       "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/ooba_maika_nigiri.png"
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/oogiri_maguro_harami_02.png"
     },
     {
-      "id": "02bb3c14705d",
-      "name": "厚切りつぶ貝",
+      "id": "c15559fd7052",
+      "name": "炙り大切りまぐろはらみゆず塩",
       "price": 110,
       "category": "nigiri",
       "region": "全国",
       "note": null,
       "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/atsugiri_tsubugai.png"
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/aburi_oogiri_maguro_harami_02.png"
     },
     {
-      "id": "4db748ef1280",
-      "name": "炙り厚切りつぶ貝塩レモン",
-      "price": 110,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/atsugiri_tsubugai_shio_lemon.png"
-    },
-    {
-      "id": "10d53f8ef42b",
-      "name": "宮城県産さんま",
+      "id": "8338dc9c0ddd",
+      "name": "なすの揚げびたし握り",
       "price": 176,
       "category": "nigiri",
       "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/miyagikensan_sanma.png"
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/nasu_no_agebitashi_nigiri.png"
     },
     {
-      "id": "11898e92236b",
-      "name": "炙り宮城県産さんま塩レモン",
+      "id": "1416cbc698f6",
+      "name": "ハムカツ握り",
       "price": 176,
       "category": "nigiri",
       "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/miyagikensan-sanma-shio-remon.png"
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hamukatsu_nigiri.png"
     },
     {
       "id": "7bc78dedb684",
@@ -187,54 +187,44 @@
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/katsushime_hamachi_kabosu_oroshi.png"
     },
     {
-      "id": "0e3bbefc0f0e",
-      "name": "黄金カレイフライ握り（タルタルソース）",
+      "id": "bcee27db60a8",
+      "name": "なすの揚げびたし握りおろし盛り",
       "price": 231,
       "category": "nigiri",
       "region": "全国",
-      "note": "※お持ち帰りの場合、タルタルソースはネタの下にお入れいたします。",
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kogane_karei_fry_nigiri_tarutaru_sauce_lemon_nashi.png"
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/naso_no_agebitashi_nigiri_oroshimori.png"
     },
     {
-      "id": "b54e12b10b95",
-      "name": "黄金カレイフライ握り",
-      "price": 231,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kogane_karei_fry_nigiri_lemon_nashi.png"
-    },
-    {
-      "id": "35363c02ddba",
-      "name": "鹿児島県産大切り活〆かんぱち",
+      "id": "09b3791ef570",
+      "name": "地中海産大切り本鮪中とろ",
       "price": 319,
       "category": "nigiri",
       "region": "全国",
       "note": null,
       "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kagoshimakensan_okiri_katsushime_kanpati_fair.png"
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/chichukaisan_oogiri_honmaguro_chutoro.png"
     },
     {
-      "id": "b7b32d38a1ee",
-      "name": "鹿児島県産大切り活〆かんぱちゆず塩",
+      "id": "f770db91723b",
+      "name": "炙り地中海産大切り本鮪中とろゆず塩",
       "price": 319,
       "category": "nigiri",
       "region": "全国",
       "note": null,
       "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kagoshimakensan_okiri_katsushime_kanpati_fair_yuzushio.png"
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/aburi_chichukaisan_oogiri_honmaguro_chutoro.png"
     },
     {
-      "id": "fc0875cfab4d",
-      "name": "鹿児島県産大切りかんぱちレアステーキ",
+      "id": "06a2b82d4892",
+      "name": "時鮭",
       "price": 319,
       "category": "nigiri",
       "region": "全国",
-      "note": null,
+      "note": "※北海道の店舗のみ販売いたします。",
       "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kagoshimakensan_okiri_kanpachi_reasteak.png"
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/tokishirazu.png"
     },
     {
       "id": "e25c4e7cc3fb",
@@ -257,26 +247,6 @@
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kasane_gensen_maguro_chutoro_yuzushio.png"
     },
     {
-      "id": "f53033e8225c",
-      "name": "うに軍艦",
-      "price": 319,
-      "category": "gunkan",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/uni_gunkan.png"
-    },
-    {
-      "id": "3b47ab091ecf",
-      "name": "うにいくら軍艦",
-      "price": 319,
-      "category": "gunkan",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/uniikura_gunkan.png"
-    },
-    {
       "id": "6af3007bd971",
       "name": "一本穴子",
       "price": 528,
@@ -287,24 +257,74 @@
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/ippon_anago_saratsuki.png"
     },
     {
-      "id": "008152b3c664",
-      "name": "黄金カレイフライ（タルタルソース）",
-      "price": 297,
+      "id": "e8bf2bad7bc0",
+      "name": "横浜家系ラーメン",
+      "price": 429,
+      "category": "noodle",
+      "region": "全国",
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/yokohama_iekei_ramen.png"
+    },
+    {
+      "id": "3b76911e26b2",
+      "name": "焼豚増量 横浜家系ラーメン",
+      "price": 506,
+      "category": "noodle",
+      "region": "全国",
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/yakibuta_zouryou_yokohama_iekei_ramen.png"
+    },
+    {
+      "id": "4de575ed1ad1",
+      "name": "辛旨とんこつ醤油ラーメン",
+      "price": 506,
+      "category": "noodle",
+      "region": "全国",
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/karaumatonkotsu_shoyu_ramen.png"
+    },
+    {
+      "id": "950c7d271e11",
+      "name": "松茸茶碗蒸し",
+      "price": 396,
+      "category": "nigiri",
+      "region": "全国",
+      "note": "※お持ち帰り不可※具材は生地の中に入っております。※北海道の店舗は銀杏の代わりに栗が入ります。",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/matsutake_chawanmushi.png"
+    },
+    {
+      "id": "30dc6d42f75b",
+      "name": "長崎県産あじのアジフライ（タルタルソース）",
+      "price": 242,
       "category": "nigiri",
       "region": "全国",
       "note": null,
       "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kogane_karei_fry_tarutaru_sauce_saratsuki.png"
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/nagasakikensan_aji_no_ajifurai_tartarsauce.png"
     },
     {
-      "id": "2eb047123ba4",
-      "name": "特製牛すじ煮込み",
-      "price": 319,
+      "id": "59c88c0a6acf",
+      "name": "長崎県産あじのアジフライ（お好みソース）",
+      "price": 242,
       "category": "nigiri",
       "region": "全国",
-      "note": "※お持ち帰り不可",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/tokusei_gyusuji_nikomi.png"
+      "note": null,
+      "takeoutUnavailable": false,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/nagasakikensan_aji_no_ajifurai_okonomisauce.png"
+    },
+    {
+      "id": "eb6f55361478",
+      "name": "長崎県産あじのアジフライ",
+      "price": 242,
+      "category": "nigiri",
+      "region": "全国",
+      "note": null,
+      "takeoutUnavailable": false,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/nagasakikensan_aji_no_ajifurai.png"
     },
     {
       "id": "144ade4d536a",
@@ -335,6 +355,16 @@
       "note": null,
       "takeoutUnavailable": false,
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/waguri_monburan.png"
+    },
+    {
+      "id": "bbd53633c226",
+      "name": "お月見ミニパルフェ",
+      "price": 264,
+      "category": "nigiri",
+      "region": "全国",
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/otsukimi_mini_parufe.png"
     },
     {
       "id": "79bea90c3d5d",
@@ -1967,6 +1997,16 @@
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/side/pho_kamoudon.png"
     },
     {
+      "id": "73237c2d88b4",
+      "name": "特製とん汁うどん",
+      "price": 429,
+      "category": "noodle",
+      "region": "全国",
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/side/pho_tokusei_tonjiru_udon.png"
+    },
+    {
       "id": "b2409210c0b8",
       "name": "えび天きつねうどん",
       "price": 429,
@@ -2335,16 +2375,6 @@
       "note": "※お持ち帰り不可",
       "takeoutUnavailable": true,
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/dessert/pho_tamago_pudding.png"
-    },
-    {
-      "id": "8e4b773fc24a",
-      "name": "黒蜜きなこ豆乳プリン",
-      "price": 209,
-      "category": "dessert",
-      "region": "全国",
-      "note": "※お持ち帰り不可",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/dessert/pho_kuromitsu_kinako_tounyu_pudding.png"
     },
     {
       "id": "c7bd0b5fe1d6",
