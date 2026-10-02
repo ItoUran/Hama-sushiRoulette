@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-01T23:03:48.932Z",
+  "updatedAt": "2026-10-02T22:53:54.916Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 343,
+  "itemCount": 341,
   "categories": [
     "nigiri",
     "gunkan",
@@ -1735,26 +1735,6 @@
       "note": null,
       "takeoutUnavailable": false,
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/gunkan/pho_kanimiso.png"
-    },
-    {
-      "id": "25828714e042",
-      "name": "アスパラ天握り",
-      "price": 176,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/nigiri/pho_asupara_ten_nigiri.png"
-    },
-    {
-      "id": "2fe8432ad292",
-      "name": "アスパラ天",
-      "price": 176,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/nigiri/pho_asupara_ten.png"
     },
     {
       "id": "a047a965dc59",
