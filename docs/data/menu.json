@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-02T22:53:54.916Z",
+  "updatedAt": "2026-10-03T22:04:47.634Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 341,
+  "itemCount": 340,
   "categories": [
     "nigiri",
     "gunkan",
@@ -36,16 +36,6 @@
     "関西"
   ],
   "items": [
-    {
-      "id": "bb2d380e3666",
-      "name": "うにつつみ",
-      "price": 110,
-      "category": "nigiri",
-      "region": "全国",
-      "note": "※お持ち帰り不可",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/unitsutsumi.png"
-    },
     {
       "id": "185632af6d5c",
       "name": "大切りまぐろはらみ",
