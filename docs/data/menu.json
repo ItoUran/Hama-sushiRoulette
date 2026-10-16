@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-15T22:05:02.562Z",
+  "updatedAt": "2026-10-16T21:58:25.967Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 349,
+  "itemCount": 346,
   "categories": [
     "nigiri",
     "gunkan",
@@ -36,36 +36,6 @@
     "関西"
   ],
   "items": [
-    {
-      "id": "7e1583e4d9e1",
-      "name": "広島県産牡蠣握り",
-      "price": 110,
-      "category": "nigiri",
-      "region": "全国",
-      "note": "※お持ち帰り不可※茹で牡蠣を使用しております。",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hiroshimakensan_kaki_nigiri_notlemon.png"
-    },
-    {
-      "id": "35af803fa2b0",
-      "name": "広島県産牡蠣握り（もみじおろしのせ）",
-      "price": 110,
-      "category": "nigiri",
-      "region": "全国",
-      "note": "※お持ち帰り不可※茹で牡蠣を使用しております。",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hiroshimakensan_kaki_nigiri_momiji_oroshi_nose.png"
-    },
-    {
-      "id": "eec6fbdf9854",
-      "name": "広島県産牡蠣握り（ぽん酢ジュレのせ）",
-      "price": 110,
-      "category": "nigiri",
-      "region": "全国",
-      "note": "※お持ち帰り不可※茹で牡蠣を使用しております。",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hiroshimakensan_kaki_nigiri_ponzu_jelly_nose.png"
-    },
     {
       "id": "4827450e7557",
       "name": "広島県産牡蠣のカキフライつつみ",
