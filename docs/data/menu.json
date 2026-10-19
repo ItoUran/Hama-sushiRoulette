@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-18T21:21:42.947Z",
+  "updatedAt": "2026-10-19T22:51:15.017Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 346,
+  "itemCount": 343,
   "categories": [
     "nigiri",
     "gunkan",
@@ -1747,26 +1747,6 @@
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/gunkan/pho_kanimiso.png"
     },
     {
-      "id": "25828714e042",
-      "name": "アスパラ天握り",
-      "price": 176,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/nigiri/pho_asupara_ten_nigiri.png"
-    },
-    {
-      "id": "2fe8432ad292",
-      "name": "アスパラ天",
-      "price": 176,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/nigiri/pho_asupara_ten.png"
-    },
-    {
       "id": "a047a965dc59",
       "name": "まぐろ三種盛りまぐろ・とろびんちょう・とろたく",
       "price": 176,
@@ -2385,16 +2365,6 @@
       "note": "※お持ち帰り不可",
       "takeoutUnavailable": true,
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/dessert/pho_tamago_pudding.png"
-    },
-    {
-      "id": "8e4b773fc24a",
-      "name": "黒蜜きなこ豆乳プリン",
-      "price": 209,
-      "category": "dessert",
-      "region": "全国",
-      "note": "※お持ち帰り不可",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/dessert/pho_kuromitsu_kinako_tounyu_pudding.png"
     },
     {
       "id": "c7bd0b5fe1d6",
