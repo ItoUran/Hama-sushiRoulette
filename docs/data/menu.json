@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-26T23:04:26.701Z",
+  "updatedAt": "2026-10-27T22:53:54.347Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 343,
+  "itemCount": 341,
   "categories": [
     "nigiri",
     "gunkan",
@@ -37,6 +37,16 @@
   ],
   "items": [
     {
+      "id": "9b9169caaed7",
+      "name": "大切りみなみまぐろ天身",
+      "price": 110,
+      "category": "nigiri",
+      "region": "全国",
+      "note": null,
+      "takeoutUnavailable": false,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/oogiri_minamimaguro_tenmi.png"
+    },
+    {
       "id": "4827450e7557",
       "name": "広島県産牡蠣のカキフライつつみ",
       "price": 110,
@@ -67,54 +77,14 @@
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hiroshimakensan_kaki_gly_tsutsumi_notlemon_okonomi.png"
     },
     {
-      "id": "d577d6b28a12",
-      "name": "国産まいたけの天ぷら握り",
-      "price": 110,
+      "id": "15524041d252",
+      "name": "淡路島産わかめのわかメンチ握り",
+      "price": 132,
       "category": "nigiri",
       "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kokusan_maitake_no_tempura_nigiri.png"
-    },
-    {
-      "id": "805689b1c8b3",
-      "name": "あんきも軍艦",
-      "price": 176,
-      "category": "gunkan",
-      "region": "全国",
-      "note": "※お持ち帰りの場合、ネギは付きません",
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/ankimo_gunkan.png"
-    },
-    {
-      "id": "0aeaf6f85be5",
-      "name": "あんきもかにみそ軍艦",
-      "price": 176,
-      "category": "gunkan",
-      "region": "全国",
-      "note": "※お持ち帰りの場合、ネギは付きません",
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/ankimo_kani_miso_gunkan.png"
-    },
-    {
-      "id": "37850b2d9d28",
-      "name": "北海道産塩〆黒そい（もみじおろしのせ）",
-      "price": 176,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hokkaidou_shioshime_kurosoi.png"
-    },
-    {
-      "id": "60d35e399904",
-      "name": "炙り北海道産塩〆黒そい",
-      "price": 176,
-      "category": "nigiri",
-      "region": "全国",
-      "note": null,
-      "takeoutUnavailable": false,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/aburi_hokkaidou_shioshime_kurosoi.png"
+      "note": "※お持ち帰り不可",
+      "takeoutUnavailable": true,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/awajishimasan_wakameno_wakamenchinigiri.png"
     },
     {
       "id": "2754ddfd8b40",
@@ -285,6 +255,16 @@
       "note": null,
       "takeoutUnavailable": false,
       "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kasane_gensen_maguro_chutoro_yuzushio.png"
+    },
+    {
+      "id": "a3f1d9da6afb",
+      "name": "北海道産茹でオオズワイガニ",
+      "price": 319,
+      "category": "nigiri",
+      "region": "全国",
+      "note": null,
+      "takeoutUnavailable": false,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/hokkaidousan_yude_oozuwaigani.png"
     },
     {
       "id": "6af3007bd971",
