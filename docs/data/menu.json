@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-10T23:57:52.582Z",
+  "updatedAt": "2026-11-12T01:25:42.019Z",
   "sourceUrl": "https://www.hama-sushi.co.jp/menu/",
-  "itemCount": 335,
+  "itemCount": 336,
   "categories": [
     "nigiri",
     "gunkan",
@@ -37,14 +37,24 @@
   ],
   "items": [
     {
-      "id": "a415c56d28d6",
-      "name": "みなみまぐろ大とろ",
+      "id": "0553b99b01c1",
+      "name": "国産大切り生さば",
       "price": 110,
       "category": "nigiri",
       "region": "全国",
-      "note": "※お持ち帰り不可",
-      "takeoutUnavailable": true,
-      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/minamimaguro_ootoro.png"
+      "note": null,
+      "takeoutUnavailable": false,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/kokusan_namasaba.png"
+    },
+    {
+      "id": "38f97f1a38df",
+      "name": "炙り国産大切りさば",
+      "price": 110,
+      "category": "nigiri",
+      "region": "全国",
+      "note": null,
+      "takeoutUnavailable": false,
+      "image": "https://www.hama-sushi.co.jp/assets/menu/img/fair/aburi_kokusan_namasaba.png"
     },
     {
       "id": "4827450e7557",
